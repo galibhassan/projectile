@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gravity</title>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="r11979iQ"></script>
+    <style>
+        *{
+            margin: 0
+        }
+        body{
+            display: flex;
+            justify-content: center
+        }
+        .container{
+            /* border: 1px solid rgb(17, 59, 150); */
+            width: 90vw;
+            height: 99vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #mainCanvas{
+            /* border: 1px solid salmon; */
+            box-shadow: 1px 1px 14px 1px rgba(0,0,0,0.3);
+        }
+        .speedBar{
+            width: 20px;
+            height: 5px;
+            background: rgb(83, 83, 143);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="speedBar"></div>
+        <canvas id="mainCanvas"></canvas>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+    </div>
+    <script src="./src/rigidBody.js"></script>
+    <script src="./src/fallingBody.js"></script>
+    <script src="./src/SlantedFallingBody.js"></script>
+    
+    <script src="./src/main.js"></script>
+
+</body>
+</html>
