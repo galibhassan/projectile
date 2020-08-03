@@ -13,7 +13,7 @@ class RigidBody {
     draw(){
         this.ctx.beginPath();
         this.ctx.arc(this.position.x, this.position.y, this.size, 0, 2*Math.PI)
-        this.ctx.fillStyle = 'tomato';
+        this.ctx.fillStyle = '#1877F2';
         this.ctx.fill()
     }
     getPosition(){
